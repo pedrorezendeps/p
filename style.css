@@ -41,7 +41,11 @@ body {
 }
 
 #profile {
+    width: 100%;
     text-align: center;
+    max-width: 588px ;
+
+    margin: 56px auto 0px;
     padding: 24px;
 }
 
