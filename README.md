@@ -1,4 +1,6 @@
-# Nome projeto
+# pedro rezende
+## estou começando a estudar progamaçao. sendo as linguagens 
 
-- iten
-- item
+- html
+- css
+-javascript
