@@ -16,10 +16,10 @@ box-sizing: border-box;
 
  .light {
     --text-color: black;
-    --bg-url: url(./assets/bg-desktop-light.jpg);
+    --bg-url: url(./assets/bg-mobile-light.jpg);
     --borda-butao: rgba(255, 255, 255, 0.5);
     --fundo-butao: rgba(255, 255, 255, 0.05);
-    --fundo-botao-mause: rgba(0, 0, 0, 0.02);
+    --fundo-botao-mause: rgba(0, 0, 0, 0.15);
     --cor-linkssocial: rgba(0, 0, 0, 0.01) ;
     --botao-light-dark:url(./assets/sun.svg);
  }
@@ -28,7 +28,7 @@ box-sizing: border-box;
 
 body {
     background: var(--bg-url) no-repeat top center/cover;
-    height: 100vh;
+    min-height: 100vh;
 }
         body * {
     font-family: 'Inter', sans-serif;
@@ -82,11 +82,16 @@ body {
     top: 50%;
     z-index: 1;
     transform: translateY(-50%);
+
+    animation: voltar 0.2s;
 }
 
 .light #switch button{
-    left: auto;
-    right: 0;
+    animation: deslizar 0.2s forwards;
+}
+
+#switch button:hover{
+    outline: 8px solid var(--cor-linkssocial);
 }
 
 #switch span{
@@ -174,5 +179,31 @@ footer {
 /*media queries*/
 
 @media(min-width: 700px) {
-    
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg);
+
+    }
+
+    .light {
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
+}
+
+@keyframes deslizar{
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes voltar {
+    from {
+        left: 50%;
+    }
+
+    to {
+        left: 0;
+    }
 }

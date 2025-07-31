@@ -1,8 +1,11 @@
-# pedro rezende
-## estou começando a estudar progamaçao. sendo as linguagens 
+# Pedro Rezende
+## 👋 Olá! Estou começando a estudar programação.
+### Atualmente estou aprendendo:
 
-- html
+- 🌐 HTML – a base da web
 
-- css
+- 🎨 CSS – para deixar tudo mais bonito
 
--javascript
+- ⚙️ JavaScript – para dar vida aos sites
+
+## Estou animado para estudar e construir projetos cada vez melhores
