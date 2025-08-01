@@ -50,9 +50,14 @@ body {
     padding: 24px;
 }
 
+#profile img.animar {
+  animation: quicar-perfil 0.4s ease;
+}
+
 
 #profile img {
-    width: 112px;
+    width: 128px;
+    border-radius: 50%;
 }
 
 
@@ -163,6 +168,7 @@ ul li a:hover{
 
     transition: background 0.2s;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 
@@ -206,4 +212,11 @@ footer {
     to {
         left: 0;
     }
+}
+
+@keyframes quicar-perfil {
+  0%   { transform: translateX(0); }
+  30%  { transform: translateX(-20px); }
+  60%  { transform: translateX(10px); }
+  100% { transform: translateX(0); }
 }
